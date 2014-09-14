@@ -1,3 +1,7 @@
+# ...
+  # ...
+    # ...
+      # ...
 gem 'minitest', '~> 5.4'
 require 'minitest/autorun'
 require 'minitest/pride'
@@ -76,7 +80,6 @@ VERSES
   end
 
   def test_the_whole_song
-    skip
     expected = <<-SONG
 99 bottles of beer on the wall, 99 bottles of beer.
 Take one down and pass it around, 98 bottles of beer on the wall.
