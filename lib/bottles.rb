@@ -1,5 +1,9 @@
 class Bottles
 
+  def verses(starting, ending)
+    verse(starting) + "\n" + verse(ending)
+  end
+
   def verse(number)
     case number
     when 0
