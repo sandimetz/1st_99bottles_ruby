@@ -20,10 +20,10 @@ class Bottles
       "Go to the store and buy some more, " +
       "99 bottles of beer on the wall.\n"
     when 1
-      "#{number} #{container(number)} of beer on the wall, " +
-      "#{number} #{container(number)} of beer.\n" +
+      "#{quantity(number)} #{container(number)} of beer on the wall, " +
+      "#{quantity(number)} #{container(number)} of beer.\n" +
       "Take it down and pass it around, " +
-      "no more #{container(number-1)} of beer on the wall.\n"
+      "#{quantity(number-1)} #{container(number-1)} of beer on the wall.\n"
     else
       "#{quantity(number)} #{container(number)} of beer on the wall, " +
       "#{quantity(number)} #{container(number)} of beer.\n" +
