@@ -25,10 +25,10 @@ class Bottles
       "Take it down and pass it around, " +
       "no more #{container(number-1)} of beer on the wall.\n"
     else
-      "#{number} #{container(number)} of beer on the wall, " +
-      "#{number} #{container(number)} of beer.\n" +
+      "#{quantity(number)} #{container(number)} of beer on the wall, " +
+      "#{quantity(number)} #{container(number)} of beer.\n" +
       "Take one down and pass it around, " +
-      "#{number-1} #{container(number-1)} of beer on the wall.\n"
+      "#{quantity(number-1)} #{container(number-1)} of beer on the wall.\n"
     end
   end
 
