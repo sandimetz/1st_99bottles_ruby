@@ -28,7 +28,7 @@ class Bottles
       "#{number} bottles of beer on the wall, " +
       "#{number} bottles of beer.\n" +
       "Take one down and pass it around, " +
-      "#{number-1} bottle of beer on the wall.\n"
+      "#{number-1} #{container(number-1)} of beer on the wall.\n"
     else
       "#{number} bottles of beer on the wall, " +
       "#{number} bottles of beer.\n" +
