@@ -39,4 +39,8 @@ class Bottles
       "bottles"
     end
   end
+
+  def quantity(number)
+    number
+  end
 end
