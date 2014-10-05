@@ -60,4 +60,12 @@ class Bottles
       "one"
     end
   end
+
+  def successor(number)
+    if number == 0
+      99
+    else
+      number - 1
+    end
+  end
 end
