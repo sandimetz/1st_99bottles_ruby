@@ -22,12 +22,12 @@ class Bottles
     when 1
       "#{quantity(number)} #{container(number)} of beer on the wall, " +
       "#{quantity(number)} #{container(number)} of beer.\n" +
-      "Take it down and pass it around, " +
+      "Take #{pronoun(number)} down and pass it around, " +
       "#{quantity(number-1)} #{container(number-1)} of beer on the wall.\n"
     else
       "#{quantity(number)} #{container(number)} of beer on the wall, " +
       "#{quantity(number)} #{container(number)} of beer.\n" +
-      "Take one down and pass it around, " +
+      "Take #{pronoun(number)} down and pass it around, " +
       "#{quantity(number-1)} #{container(number-1)} of beer on the wall.\n"
     end
   end
@@ -45,6 +45,14 @@ class Bottles
       "no more"
     else
       number.to_s
+    end
+  end
+
+  def pronoun(number)
+    if number == 1
+      "it"
+    else
+      "one"
     end
   end
 end
