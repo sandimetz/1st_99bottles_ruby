@@ -21,7 +21,8 @@ class Bottles
       "Go to the store and buy some more, " +
       "99 #{container(number-1)} of beer on the wall.\n"
     else
-      "#{quantity(number)} #{container(number)} of beer on the wall, " +
+      "#{quantity(number).capitalize} #{container(number)} " +
+      "of beer on the wall, " +
       "#{quantity(number)} #{container(number)} of beer.\n" +
       "Take #{pronoun(number)} down and pass it around, " +
       "#{quantity(number-1)} #{container(number-1)} of beer on the wall.\n"
