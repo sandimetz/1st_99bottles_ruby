@@ -37,4 +37,7 @@ class Bottles
     end
   end
 
+  def container
+    "bottles"
+  end
 end
