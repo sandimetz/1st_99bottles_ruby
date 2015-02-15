@@ -3,12 +3,14 @@
     # ...
       # ...
 class Bottles
-  # FIXME: no test coverage ranges other than 99,98 and 2,1,0
+  def song
+    verses(99, 0)
+  end
+
   def verses(starting, ending)
     starting.downto(ending).collect {|i| verse(i)}.join("\n")
   end
 
-  # FIXME: no test coverage for 4..98
   def verse(number)
     case number
     when 0
