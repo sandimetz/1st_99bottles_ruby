@@ -15,4 +15,12 @@ Take one down and pass it around, 98 bottles of beer on the wall.
 VERSE
     assert_equal expected, ::Bottles.new.verse(99)
   end
+
+  def test_another_verse
+    expected = <<-VERSE
+3 bottles of beer on the wall, 3 bottles of beer.
+Take one down and pass it around, 2 bottles of beer on the wall.
+VERSE
+    assert_equal expected, ::Bottles.new.verse(3)
+  end
 end
