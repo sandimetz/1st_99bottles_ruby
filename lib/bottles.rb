@@ -3,8 +3,12 @@
     # ...
       # ...
 class Bottles
-  def verses(_, _)
-    verse(99) + "\n" + verse(98)
+  def verses(starting, ending)
+    if starting == 99
+      verse(99) + "\n" + verse(98)
+    else
+      verse(2) + "\n" + verse(1) + "\n" + verse(0)
+    end
   end
 
   # FIXME: no test coverage for 4..98
