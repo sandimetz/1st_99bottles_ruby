@@ -3,6 +3,7 @@
     # ...
       # ...
 class Bottles
+  # FIXME: no test coverage ranges other than 99,98 and 2,1,0
   def verses(starting, ending)
     starting.downto(ending).collect {|i| verse(i)}.join("\n")
   end
