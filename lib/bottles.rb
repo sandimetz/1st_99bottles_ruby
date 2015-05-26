@@ -39,6 +39,10 @@ class Bottles
   end
 
   def container(number=:FIXME)
-    "bottles"
+    if number == 1
+      "bottle"
+    else
+      "bottles"
+    end
   end
 end
