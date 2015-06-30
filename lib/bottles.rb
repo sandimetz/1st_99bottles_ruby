@@ -18,7 +18,7 @@ class Bottles
     when 0
       "#{quantity(number).capitalize} #{container(number)} of beer on the wall, " +
       "#{quantity(number)} #{container(number)} of beer.\n" +
-      "Go to the store and buy some more, " +
+      "#{action(number)}, " +
       "99 bottles of beer on the wall.\n"
     else
       "#{quantity(number).capitalize} #{container(number)} of beer on the wall, " +
