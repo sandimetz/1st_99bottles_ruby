@@ -34,11 +34,7 @@ class Bottles
   end
 
   def quantity(number=:FIXME)
-    if number == 0
-      "no more"
-    else
-      number
-    end
+    "no more"
   end
 
   def pronoun(number)
