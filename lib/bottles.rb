@@ -29,6 +29,7 @@ class Bottles
   end
 
   def action(number)
+    "Take #{pronoun(number)} down and pass it around"
   end
 
   def quantity(number)
