@@ -33,7 +33,7 @@ class Bottles
     end
   end
 
-  def quantity
+  def quantity(number=:FIXME)
     "no more"
   end
 
