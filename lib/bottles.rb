@@ -22,7 +22,7 @@ class Bottles
       "99 bottles of beer on the wall.\n"
     else
       "#{quantity(number).capitalize} #{container(number)} of beer on the wall, " +
-      "#{number} #{container(number)} of beer.\n" +
+      "#{quantity(number)} #{container(number)} of beer.\n" +
       "Take #{pronoun(number)} down and pass it around, " +
       "#{quantity(number-1)} #{container(number-1)} of beer on the wall.\n"
     end
