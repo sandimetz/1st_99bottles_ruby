@@ -33,6 +33,9 @@ class Bottles
     end
   end
 
+  def quantity
+  end
+
   def pronoun(number=:FIXME)
     if number == 1
       "it"
