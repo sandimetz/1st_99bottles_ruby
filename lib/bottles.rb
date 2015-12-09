@@ -19,7 +19,7 @@ class Bottles
       "of beer on the wall, " +
     "#{bottle_number.quantity} #{bottle_number.container} of beer.\n" +
     "#{bottle_number.action}, " +
-    "#{quantity(successor(number))} #{container(successor(number))} " +
+    "#{quantity(bottle_number.successor)} #{container(bottle_number.successor)} " +
       "of beer on the wall.\n"
   end
 
