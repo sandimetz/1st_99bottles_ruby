@@ -1,4 +1,4 @@
 class Bottles
-  def verse
+  def verse(_)
   end
 end
