@@ -77,6 +77,9 @@ class BottlesTest < Minitest::Test
 
   def test_the_whole_song
     bottles = Bottles.new
-    assert_equal bottles.verses(99, 0), bottles.song
+    expected = 99.downto(0).collect {|i|
+      bottles.verse(i)
+    }.join("\n")
+    assert_equal expected, bottles.song
   end
 end
