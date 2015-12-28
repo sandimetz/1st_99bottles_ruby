@@ -30,7 +30,7 @@ class Bottles
   end
 
   def action(number)
-    BottleNumber.new(number).action(number)
+    BottleNumber.new(number).action
   end
 
   def pronoun(number)
@@ -64,7 +64,7 @@ class BottleNumber
     end
   end
 
-  def action(number)
+  def action
     if number == 0
       "Go to the store and buy some more"
     else
