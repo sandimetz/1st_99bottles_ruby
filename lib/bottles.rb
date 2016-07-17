@@ -14,11 +14,19 @@ class Bottles
     "#{quantity(successor(number))} #{container(successor(number))} of beer on the wall.\n"
   end
 
-  def successor(number)
+  def quantity(number)
     if number == 0
-      99
+      "no more"
     else
-      number - 1
+      number.to_s
+    end
+  end
+
+  def container(number)
+    if number == 1
+      "bottle"
+    else
+      "bottles"
     end
   end
 
@@ -30,14 +38,6 @@ class Bottles
     end
   end
 
-  def quantity(number)
-    if number == 0
-      "no more"
-    else
-      number.to_s
-    end
-  end
-
   def pronoun(number)
     if number == 1
       "it"
@@ -46,11 +46,11 @@ class Bottles
     end
   end
 
-  def container(number)
-    if number == 1
-      "bottle"
+  def successor(number)
+    if number == 0
+      99
     else
-      "bottles"
+      number - 1
     end
   end
 end
