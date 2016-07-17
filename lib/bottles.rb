@@ -22,6 +22,10 @@ class Bottles
     end
   end
 
+  def successor(number)
+    number - 1
+  end
+
   def action(number)
     if number == 0
       "Go to the store and buy some more"
