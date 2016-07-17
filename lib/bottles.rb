@@ -14,19 +14,11 @@ class Bottles
     "#{quantity(successor(number))} #{container(successor(number))} of beer on the wall.\n"
   end
 
-  def successor(number)
-    if number == 0
-      99
+  def container(number)
+    if number == 1
+      "bottle"
     else
-      number - 1
-    end
-  end
-
-  def action(number)
-    if number == 0
-      "Go to the store and buy some more"
-    else
-      "Take #{pronoun(number)} down and pass it around"
+      "bottles"
     end
   end
 
@@ -38,6 +30,14 @@ class Bottles
     end
   end
 
+  def action(number)
+    if number == 0
+      "Go to the store and buy some more"
+    else
+      "Take #{pronoun(number)} down and pass it around"
+    end
+  end
+
   def pronoun(number)
     if number == 1
       "it"
@@ -46,11 +46,11 @@ class Bottles
     end
   end
 
-  def container(number)
-    if number == 1
-      "bottle"
+  def successor(number)
+    if number == 0
+      99
     else
-      "bottles"
+      number - 1
     end
   end
 end
