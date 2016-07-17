@@ -27,6 +27,9 @@ class Bottles
     end
   end
 
+  def quantity
+  end
+
   def pronoun(number)
     if number == 1
       "it"
