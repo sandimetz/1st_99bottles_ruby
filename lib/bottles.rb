@@ -31,4 +31,7 @@ class Bottles
       "#{number-1} bottles of beer on the wall.\n"
     end
   end
+
+  def container
+  end
 end
