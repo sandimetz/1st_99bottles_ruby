@@ -27,7 +27,7 @@ class Bottles
     end
   end
 
-  def pronoun(number=:FIXME)
+  def pronoun(number)
     if number == 1
       "it"
     else
