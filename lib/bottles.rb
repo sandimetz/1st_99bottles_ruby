@@ -32,7 +32,7 @@ class Bottles
     end
   end
 
-  def container
+  def container(number=:FIXME)
     "bottles"
   end
 end
