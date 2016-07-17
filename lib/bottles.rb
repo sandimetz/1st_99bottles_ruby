@@ -28,6 +28,7 @@ class Bottles
   end
 
   def quantity
+    "no more"
   end
 
   def pronoun(number)
