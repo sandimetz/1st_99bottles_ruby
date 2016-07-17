@@ -23,7 +23,11 @@ class Bottles
   end
 
   def successor(number)
-    number - 1
+    if number == 0
+      99
+    else
+      number - 1
+    end
   end
 
   def action(number)
