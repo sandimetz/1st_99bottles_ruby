@@ -15,7 +15,7 @@ class Bottles
   end
 
   def container(number)
-    BottleNumber.new(number).container(number)
+    BottleNumber.new(number).container
   end
 
   def quantity(number)
