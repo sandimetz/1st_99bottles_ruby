@@ -15,6 +15,7 @@ class Bottles
   end
 
   def container(number)
+    BottleNumber.new(number).container(number)
     if number == 1
       "bottle"
     else
