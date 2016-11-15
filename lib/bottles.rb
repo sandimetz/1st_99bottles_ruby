@@ -13,8 +13,8 @@ class Bottles
   end
 
   def verse(number)
-    bottle_number      = bottle_number_for(number)
-    next_bottle_number = bottle_number_for(bottle_number.successor)
+    bottle_number      = BottleNumber.for(number)
+    next_bottle_number = BottleNumber.for(bottle_number.successor)
     # next_bottle_number = bottle_number.successor
 
     "#{bottle_number} of beer on the wall, ".capitalize +
@@ -36,6 +36,17 @@ class Bottles
 end
 
 class BottleNumber
+  def self.for(number)
+    case number
+    when 0
+      BottleNumber0
+    when 1
+      BottleNumber1
+    else
+      BottleNumber
+    end.new(number)
+  end
+
   attr_reader :number
   def initialize(number)
     @number = number
