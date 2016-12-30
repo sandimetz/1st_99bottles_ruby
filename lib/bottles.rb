@@ -13,7 +13,7 @@ class Bottles
   end
 
   def verse(number)
-    bottle_number = BottleNumber.new(number)
+    bottle_number      = BottleNumber.new(number)
     next_bottle_number = BottleNumber.new(bottle_number.successor)
 
     "#{bottle_number.quantity.capitalize} #{bottle_number.container} " +
