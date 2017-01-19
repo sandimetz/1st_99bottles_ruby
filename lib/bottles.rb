@@ -13,7 +13,7 @@ class Bottles
   end
 
   def verse(number)
-    bottle_number      = BottleNumber.for(number)
+    bottle_number = BottleNumber.for(number)
 
     "#{bottle_number} of beer on the wall, ".capitalize +
     "#{bottle_number} of beer.\n" +
