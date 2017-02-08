@@ -78,3 +78,6 @@ class BottleNumber0 < BottleNumber
     99
   end
 end
+
+class BottleNumber1 < BottleNumber
+end
