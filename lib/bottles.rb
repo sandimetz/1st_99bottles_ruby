@@ -17,17 +17,6 @@ class Bottles
     "#{bottle_number.action}, " +
     "#{next_bottle_number} of beer on the wall.\n"
   end
-
-  def bottle_number_for(number)
-    case number
-    when 0
-      BottleNumber0
-    when 1
-      BottleNumber1
-    else
-      BottleNumber
-    end.new(number)
-  end
 end
 
 class BottleNumber
