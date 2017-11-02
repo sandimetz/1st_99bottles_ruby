@@ -50,11 +50,6 @@ class BottleNumber
   end
 
   def action
-    if number == 0
-      "Go to the store and buy some more"
-    else
-      "Take #{pronoun} down and pass it around"
-    end
     "Take #{pronoun} down and pass it around"
   end
 
