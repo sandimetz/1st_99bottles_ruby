@@ -62,11 +62,6 @@ class BottleNumber
   end
 
   def successor
-    if number == 0
-      99
-    else
-      number - 1
-    end
     number - 1
   end
 end
