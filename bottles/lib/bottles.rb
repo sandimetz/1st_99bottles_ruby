@@ -18,6 +18,10 @@ class Bottles
         end
       end
 
+      def quantity
+        "no more"
+      end
+
       def container(number)
         if number == 1
           "bottle"
