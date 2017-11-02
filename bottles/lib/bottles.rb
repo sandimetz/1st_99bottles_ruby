@@ -27,7 +27,11 @@ class Bottles
       end
 
       def pronoun(number=:delete_me)
-        "one"
+        if number == 1
+          "it"
+        else
+          "one"
+        end
       end
 
     end
