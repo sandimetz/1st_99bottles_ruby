@@ -20,7 +20,7 @@ class Bottles
         end
       end
 
-      def container
+      def container(number=:delete_me)
         "bottles"
       end
 
