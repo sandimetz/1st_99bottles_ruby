@@ -43,6 +43,7 @@ class BottleNumber
     else
       number.to_s
     end
+    number.to_s
   end
 
   def container
