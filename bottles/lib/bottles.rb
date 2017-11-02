@@ -85,5 +85,6 @@ class BottleNumber0 < BottleNumber
     else
       number - 1
     end
+    99
   end
 end
