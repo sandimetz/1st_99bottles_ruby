@@ -82,11 +82,6 @@ end
 
 class BottleNumber1 < BottleNumber
   def container
-    if number == 1
-      "bottle"
-    else
-      "bottles"
-    end
     "bottle"
   end
 end
