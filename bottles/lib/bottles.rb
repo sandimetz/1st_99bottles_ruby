@@ -90,5 +90,6 @@ class BottleNumber1 < BottleNumber
     else
       "one"
     end
+    "it"
   end
 end
