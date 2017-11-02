@@ -19,12 +19,12 @@ class Bottles
   end
 
   def container(number)
-    BottleNumber.new(number).container(number)
     if number == 1
       "bottle"
-     else
+    else
       "bottles"
-     end
+    end
+    BottleNumber.new(number).container(number)
   end
 
   def action(number)
