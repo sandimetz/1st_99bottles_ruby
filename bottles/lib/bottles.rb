@@ -58,6 +58,7 @@ class BottleNumber
     else
       "one"
     end
+    "one"
   end
 
   def successor
