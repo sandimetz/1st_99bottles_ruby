@@ -26,4 +26,7 @@ class Bottles
          end
       end
 
+      def pronoun
+      end
+
     end
