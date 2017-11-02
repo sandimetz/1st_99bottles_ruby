@@ -55,6 +55,7 @@ class BottleNumber
     else
       "Take #{pronoun} down and pass it around"
     end
+    "Take #{pronoun} down and pass it around"
   end
 
   def pronoun
