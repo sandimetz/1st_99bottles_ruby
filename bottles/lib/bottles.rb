@@ -26,12 +26,6 @@ class Bottles
     else
       BottleNumber
     end.new(number)
-
-    if number == 0
-      BottleNumber0
-    else
-      BottleNumber
-    end.new(number)
   end
 end
 
