@@ -38,7 +38,7 @@ class BottleNumber
     @number = number
   end
 
-  def quantity(x="foo")
+  def quantity
     if number == 0
       "no more"
     else
