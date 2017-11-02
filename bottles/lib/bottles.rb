@@ -27,6 +27,7 @@ class Bottles
       end
 
       def pronoun
+        "one"
       end
 
     end
