@@ -26,7 +26,7 @@ class Bottles
          end
       end
 
-      def pronoun
+      def pronoun(number=:delete_me)
         "one"
       end
 
