@@ -26,14 +26,6 @@ class Bottles
     BottleNumber.new(number).action(number)
   end
 
-  def pronoun(number)
-    if number == 1
-      "it"
-    else
-      "one"
-    end
-  end
-
   def successor(number)
     if number == 0
       99
