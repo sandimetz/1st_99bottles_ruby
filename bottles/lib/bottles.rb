@@ -67,6 +67,7 @@ class BottleNumber
     else
       number - 1
     end
+    number - 1
   end
 end
 
