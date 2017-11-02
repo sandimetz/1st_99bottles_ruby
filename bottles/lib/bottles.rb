@@ -19,7 +19,6 @@ end
 
 
 class BottleNumber
-
   def self.for(number)
     case number
     when 0
