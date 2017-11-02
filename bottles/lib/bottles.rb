@@ -15,11 +15,6 @@ class Bottles
   end
 
   def quantity(number)
-    if number == 0
-      "no more"
-    else
-      number.to_s
-    end
     BottleNumber.new(number).quantity(number)
   end
 
