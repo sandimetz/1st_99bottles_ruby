@@ -34,11 +34,11 @@ end
 
 class BottleNumber
   attr_reader :number
-  def initialize(nubmer)
+  def initialize(number)
     @number = number
   end
 
-  def quantity(number)
+  def quantity(x="foo")
     if number == 0
       "no more"
     else
