@@ -77,5 +77,6 @@ class BottleNumber0 < BottleNumber
     else
       number.to_s
     end
+    "no more"
   end
 end
