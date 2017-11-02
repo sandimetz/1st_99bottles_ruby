@@ -20,4 +20,8 @@ class Bottles
         end
       end
 
+      def container
+
+      end
+
     end
