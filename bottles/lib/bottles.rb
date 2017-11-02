@@ -49,7 +49,8 @@ class BottleNumber
       "bottle"
      else
       "bottles"
-     end
+    end
+    "bottles"
   end
 
   def action
