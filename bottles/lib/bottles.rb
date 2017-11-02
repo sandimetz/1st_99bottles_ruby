@@ -54,7 +54,7 @@ class BottleNumber
      end
   end
 
-  def action(delete_me=nil)
+  def action
     if number == 0
       "Go to the store and buy some more"
     else
