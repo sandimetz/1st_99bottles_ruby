@@ -20,7 +20,7 @@ class Bottles
         end
       end
 
-      def container(number=:delete_me)
+      def container(number)
         if number == 1
           "bottle"
          else
