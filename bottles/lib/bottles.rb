@@ -85,5 +85,6 @@ class BottleNumber0 < BottleNumber
     else
       "Take #{pronoun} down and pass it around"
     end
+    "Go to the store and buy some more"
   end
 end
