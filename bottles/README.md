@@ -7,18 +7,16 @@ _99 Bottles of Beer_.
 
 A failing test suite is provided in `./test/bottles_test.rb`.
 
-Your mission, should you choose to accept it, is to make the tests pass.
+Your jobis to make the tests pass.
 
 The test suite can be run with the following command:
 
 ```plain
-$ ruby test/bottles_test.rb
+$ ruby bottles/test/bottles_test.rb
 ```
 
 All but the first test have been marked pending using the `skip` method.
-This means that they will not spew error messages at you, even if they're
-not passing. To get a test to run and show you the error message, delete
-the `skip`.
+To get a test to run and show you the error message, delete the `skip`.
 
 To run a single test, use the name of the test. For example:
 
