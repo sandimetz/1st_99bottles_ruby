@@ -14,7 +14,7 @@ class Bottles
         when 1
           "#{number} bottle of beer on the wall, 1 bottle of beer.\nTake it down and pass it around, no more bottles of beer on the wall.\n"
         else
-          "#{number} bottles of beer on the wall, #{number} bottles of beer.\nTake one down and pass it around, #{number-1} #{container(number-1)} of beer on the wall.\n"
+          "#{number} #{container(number)} of beer on the wall, #{number} bottles of beer.\nTake one down and pass it around, #{number-1} #{container(number-1)} of beer on the wall.\n"
         end
       end
 
