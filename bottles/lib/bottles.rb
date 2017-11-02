@@ -21,7 +21,11 @@ class Bottles
       end
 
       def container(number=:delete_me)
-        "bottles"
+        if number == 1
+          "bottle"
+         else
+          "bottles"
+         end
       end
 
     end
