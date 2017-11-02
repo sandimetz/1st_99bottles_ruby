@@ -57,4 +57,9 @@ end
 
 
 class BottleNumber
+  attr_reader :number
+  def initialize(nubmer)
+    @number = number
+  end
+
 end
