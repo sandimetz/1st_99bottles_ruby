@@ -27,6 +27,7 @@ class Bottles
   end
 
   def successor(number)
+    BottleNumber.new(number).successor(number)
     if number == 0
       99
     else
