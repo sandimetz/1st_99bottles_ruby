@@ -24,7 +24,10 @@ end
 
 class BottleNumber
   def self.for(number)
-    Hash.new(BottleNumber).merge(0 => BottleNumber0, 1 => BottleNumber1, 6 => BottleNumber6)[number].new(number)
+    Hash.new(BottleNumber).merge(
+      0 => BottleNumber0,
+      1 => BottleNumber1,
+      6 => BottleNumber6)[number].new(number)
 
     # begin
     #   const_get("BottleNumber#{number}")
