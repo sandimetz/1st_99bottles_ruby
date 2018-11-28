@@ -24,12 +24,16 @@ end
 
 class BottleNumber
   def self.for(number)
-    [BottleNumber6, BottleNumber1, BottleNumber0, BottleNumber].
-      find {|candidate| candidate.handles?(number)}.new(number)
+    @@registry.find {|candidate| candidate.handles?(number)}.new(number)
   end
 
   def self.handles?(number)
     true
+  end
+
+  def self.inherited(candidate)
+    @@registry ||= [BottleNumber]
+    @@registry.prepend(candidate)
   end
 
   attr_reader :number
