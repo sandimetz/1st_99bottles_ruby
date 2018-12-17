@@ -29,6 +29,10 @@ class BottleNumber
       1 => BottleNumber1,
       6 => BottleNumber6)[number].new(number)
 
+    {0 => BottleNumber0, 1 => BottleNumber1, 6 => BottleNumber6}.
+      fetch( number, BottleNumber).new(number)
+
+
     # begin
     #   const_get("BottleNumber#{number}")
     # rescue NameError
