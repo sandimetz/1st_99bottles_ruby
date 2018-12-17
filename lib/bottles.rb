@@ -36,7 +36,7 @@ class BottleNumber
   end
 
   def self.register(candidate)
-    registry.unshift(candidate)
+    registry.prepend(candidate)
   end
 
   attr_reader :number
