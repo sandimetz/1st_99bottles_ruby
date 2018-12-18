@@ -17,6 +17,22 @@ class Bottles
   end
 end
 
+class BottleVerse
+  attr_reader :number
+  def initialize(number)
+    @number = number
+  end
+
+  def verse(number)
+    bottle_number = BottleNumber.for(number)
+
+    "#{bottle_number} of beer on the wall, ".capitalize +
+    "#{bottle_number} of beer.\n" +
+    "#{bottle_number.action}, " +
+    "#{bottle_number.successor} of beer on the wall.\n"
+  end
+end
+
 class BottleNumber
   def self.for(number)
     case number
