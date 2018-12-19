@@ -79,6 +79,8 @@ class CountDownSongTest < Minitest::Test
     expected = <<~VERSES
       This is verse 47.
 
+      This is verse 46.
+
       This is verse 45.
 
       This is verse 44.
