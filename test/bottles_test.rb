@@ -68,17 +68,6 @@ class CountDownSongTest < Minitest::Test
       CountDownSong.new(verse_template: FakeVerse).verses(99, 98))
   end
 
-  def test_a_couple_verses
-    expected = <<~VERSES
-      99 bottles of beer on the wall, 99 bottles of beer.
-      Take one down and pass it around, 98 bottles of beer on the wall.
-
-      98 bottles of beer on the wall, 98 bottles of beer.
-      Take one down and pass it around, 97 bottles of beer on the wall.
-    VERSES
-    assert_equal expected, CountDownSong.new.verses(99, 98)
-  end
-
   def test_a_few_verses
     expected = <<~VERSES
       2 bottles of beer on the wall, 2 bottles of beer.
