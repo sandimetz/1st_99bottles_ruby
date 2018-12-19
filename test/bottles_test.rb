@@ -87,7 +87,9 @@ class CountDownSongTest < Minitest::Test
     VERSES
     assert_equal(
       expected,
-      CountDownSong.new(verse_template: FakeVerse, max: 47, min: 43).song)
+      CountDownSong.new(
+        verse_template: FakeVerse, max: 47, min: 43).
+          song)
   end
 
   def test_the_whole_song
