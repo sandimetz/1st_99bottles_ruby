@@ -63,7 +63,7 @@ class CountDownSongTest < Minitest::Test
 
       This is verse 98.
     VERSES
-    assert_equal expected, CountDownSong.new.verses(99, 98)
+    assert_equal expected, CountDownSong.new(verse_template: FakeVerse).verses(99, 98)
   end
 
   def test_a_couple_verses
