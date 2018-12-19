@@ -45,6 +45,17 @@ class BottleVerseTest < Minitest::Test
   end
 end
 
+class FakeVerse
+  attr_reader :number
+  def initialize(number)
+    @number = number
+  end
+
+  def lyrics
+    # what goes here?
+  end
+end
+
 class CountDownSongTest < Minitest::Test
   def test_a_couple_verses
     expected = <<~VERSES
