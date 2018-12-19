@@ -52,11 +52,20 @@ class FakeVerse
   end
 
   def lyrics
-    # what goes here?
+    "This is verse #{number}.\n"
   end
 end
 
 class CountDownSongTest < Minitest::Test
+  def test_a_couple_verses
+    expected = <<~VERSES
+      This is verse 99.
+
+      This is verse 98.
+    VERSES
+    assert_equal expected, CountDownSong.new.verses(99, 98)
+  end
+
   def test_a_couple_verses
     expected = <<~VERSES
       99 bottles of beer on the wall, 99 bottles of beer.
