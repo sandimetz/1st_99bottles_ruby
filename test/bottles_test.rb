@@ -45,7 +45,7 @@ class BottleVerseTest < Minitest::Test
   end
 end
 
-class BottlesTest < Minitest::Test
+class CountDownSongTest < Minitest::Test
   def test_a_couple_verses
     expected = <<~VERSES
       99 bottles of beer on the wall, 99 bottles of beer.
@@ -54,7 +54,7 @@ class BottlesTest < Minitest::Test
       98 bottles of beer on the wall, 98 bottles of beer.
       Take one down and pass it around, 97 bottles of beer on the wall.
     VERSES
-    assert_equal expected, Bottles.new.verses(99, 98)
+    assert_equal expected, CountDownSong.new.verses(99, 98)
   end
 
   def test_a_few_verses
@@ -68,7 +68,7 @@ class BottlesTest < Minitest::Test
       No more bottles of beer on the wall, no more bottles of beer.
       Go to the store and buy some more, 99 bottles of beer on the wall.
     VERSES
-    assert_equal expected, Bottles.new.verses(2, 0)
+    assert_equal expected, CountDownSong.new.verses(2, 0)
   end
 
   def test_the_whole_song
@@ -373,6 +373,6 @@ class BottlesTest < Minitest::Test
       No more bottles of beer on the wall, no more bottles of beer.
       Go to the store and buy some more, 99 bottles of beer on the wall.
     SONG
-    assert_equal expected, Bottles.new.song
+    assert_equal expected, CountDownSong.new.song
   end
 end
