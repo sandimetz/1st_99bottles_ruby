@@ -21,6 +21,10 @@ class CountDownSong
 end
 
 class BottleVerse
+  def self.lyrics(number)
+    new(number).lyrics
+  end
+
   attr_reader :number
   def initialize(number)
     @number = number
