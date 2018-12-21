@@ -46,6 +46,10 @@ class BottleVerseTest < Minitest::Test
 end
 
 class FakeVerse
+  def self.lyrics(number)
+    new(number).lyrics
+  end
+
   attr_reader :number
   def initialize(number)
     @number = number
