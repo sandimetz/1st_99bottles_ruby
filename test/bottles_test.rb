@@ -10,7 +10,6 @@ class BottleVerseTest < Minitest::Test
       Take one down and pass it around, 98 bottles of beer on the wall.
     VERSE
     assert_equal expected, BottleVerse.lyrics(99)
-    assert_equal expected, BottleVerse.new(99).lyrics
   end
 
   def test_another_verse
@@ -18,7 +17,7 @@ class BottleVerseTest < Minitest::Test
       89 bottles of beer on the wall, 89 bottles of beer.
       Take one down and pass it around, 88 bottles of beer on the wall.
     VERSE
-    assert_equal expected, BottleVerse.new(89).lyrics
+    assert_equal expected, BottleVerse.lyrics(89)
   end
 
   def test_verse_2
@@ -26,7 +25,7 @@ class BottleVerseTest < Minitest::Test
       2 bottles of beer on the wall, 2 bottles of beer.
       Take one down and pass it around, 1 bottle of beer on the wall.
     VERSE
-    assert_equal expected, BottleVerse.new(2).lyrics
+    assert_equal expected, BottleVerse.lyrics(2)
   end
 
   def test_verse_1
@@ -34,7 +33,7 @@ class BottleVerseTest < Minitest::Test
       1 bottle of beer on the wall, 1 bottle of beer.
       Take it down and pass it around, no more bottles of beer on the wall.
     VERSE
-    assert_equal expected, BottleVerse.new(1).lyrics
+    assert_equal expected, BottleVerse.lyrics(1)
   end
 
   def test_verse_0
@@ -42,7 +41,7 @@ class BottleVerseTest < Minitest::Test
       No more bottles of beer on the wall, no more bottles of beer.
       Go to the store and buy some more, 99 bottles of beer on the wall.
     VERSE
-    assert_equal expected, BottleVerse.new(0).lyrics
+    assert_equal expected, BottleVerse.lyrics(0)
   end
 end
 
