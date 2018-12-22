@@ -3,6 +3,12 @@ require 'minitest/autorun'
 require 'minitest/pride'
 require_relative '../lib/bottles'
 
+module VerseTemplateRoleTest
+  def test_plays_role
+    assert_respond_to @role_player, :lyrics
+  end
+end
+
 class FakeVerse
   def self.lyrics(number)
     new(number).lyrics
@@ -19,6 +25,12 @@ class FakeVerse
 end
 
 class BottleVerseTest < Minitest::Test
+  include VerseTemplateRoleTest
+
+  def setup
+    @role_player = BottleVerse
+  end
+
   def test_the_first_verse
     expected = <<~VERSE
       99 bottles of beer on the wall, 99 bottles of beer.
