@@ -3,6 +3,21 @@ require 'minitest/autorun'
 require 'minitest/pride'
 require_relative '../lib/bottles'
 
+class FakeVerse
+  def self.lyrics(number)
+    new(number).lyrics
+  end
+
+  attr_reader :number
+  def initialize(number)
+    @number = number
+  end
+
+  def lyrics
+    "This is verse #{number}.\n"
+  end
+end
+
 class BottleVerseTest < Minitest::Test
   def test_the_first_verse
     expected = <<~VERSE
@@ -45,20 +60,6 @@ class BottleVerseTest < Minitest::Test
   end
 end
 
-class FakeVerse
-  def self.lyrics(number)
-    new(number).lyrics
-  end
-
-  attr_reader :number
-  def initialize(number)
-    @number = number
-  end
-
-  def lyrics
-    "This is verse #{number}.\n"
-  end
-end
 
 class CountDownSongTest < Minitest::Test
   def test_a_verse
