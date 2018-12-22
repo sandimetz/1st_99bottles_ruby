@@ -24,6 +24,14 @@ class FakeVerse
   end
 end
 
+class FakeVerseTest
+  include VerseTemplateRoleTest
+
+  def setup
+    @role_player = FakeVerse
+  end
+end
+
 class BottleVerseTest < Minitest::Test
   include VerseTemplateRoleTest
 
