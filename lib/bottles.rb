@@ -1,7 +1,3 @@
-# ...
-  # ...
-    # ...
-      # ...
 class Bottles
 
   def song
@@ -21,12 +17,12 @@ class Bottles
       "of beer on the wall.\n"
   end
 
-  def container(number)
-    BottleNumber.new(number).container
+  def quantity(number)
+    BottleNumber.new(number).quantity
   end
 
-  def quantity(number)
-    BottleNumber.new(number).quantity(number)
+  def container(number)
+    BottleNumber.new(number).container(number)
   end
 
   def action(number)
@@ -48,19 +44,19 @@ class BottleNumber
     @number = number
   end
 
-  def container(delete_me=nil)
-    if number == 1
-      "bottle"
-    else
-      "bottles"
-    end
-  end
-
-  def quantity(number)
+  def quantity(delete_me=nil)
     if number == 0
       "no more"
     else
       number.to_s
+    end
+  end
+
+  def container(number)
+    if number == 1
+      "bottle"
+    else
+      "bottles"
     end
   end
 
