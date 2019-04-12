@@ -21,20 +21,20 @@ class Bottles
       "of beer on the wall.\n"
   end
 
-  def container(number)
-    BottleNumber.new(number).container(number)
-    if number == 1
-      "bottle"
-    else
-      "bottles"
-    end
-  end
-
   def quantity(number)
+    BottleNumber.new(number).quantity(number)
     if number == 0
       "no more"
     else
       number.to_s
+    end
+  end
+
+  def container(number)
+    if number == 1
+      "bottle"
+    else
+      "bottles"
     end
   end
 
@@ -69,19 +69,19 @@ class BottleNumber
     @number = number
   end
 
-  def container(number)
-    if number == 1
-      "bottle"
-    else
-      "bottles"
-    end
-  end
-
   def quantity(number)
     if number == 0
       "no more"
     else
       number.to_s
+    end
+  end
+
+  def container(number)
+    if number == 1
+      "bottle"
+    else
+      "bottles"
     end
   end
 
