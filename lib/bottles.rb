@@ -28,14 +28,6 @@ class Bottles
     end
   end
 
-  def action(number)
-    if number == 0
-      "Go to the store and buy some more"
-    else
-      "Take #{pronoun(number)} down and pass it around"
-    end
-  end
-
   def quantity(number)
     if number == 0
       "no more"
@@ -44,19 +36,27 @@ class Bottles
     end
   end
 
-  def pronoun(number)
-    if number == 1
-      "it"
-    else
-      "one"
-    end
-  end
-
   def container(number)
     if number == 1
       "bottle"
     else
       "bottles"
+    end
+  end
+
+  def action(number)
+    if number == 0
+      "Go to the store and buy some more"
+    else
+      "Take #{pronoun(number)} down and pass it around"
+    end
+  end
+
+  def pronoun(number)
+    if number == 1
+      "it"
+    else
+      "one"
     end
   end
 end
