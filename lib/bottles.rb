@@ -1,7 +1,3 @@
-# ...
-  # ...
-    # ...
-      # ...
 class Bottles
 
   def song
@@ -21,24 +17,24 @@ class Bottles
       "of beer on the wall.\n"
   end
 
-  def container(number)
-    BottleNumber.new(number).container
-  end
-
   def quantity(number)
     BottleNumber.new(number).quantity
   end
 
+  def container(number)
+    BottleNumber.new(number).container(number)
+  end
+
   def action(number)
-    BottleNumber.new(number).action
+    BottleNumber.new(number).action(number)
   end
 
   def pronoun(number)
-    BottleNumber.new(number).pronoun
+    BottleNumber.new(number).pronoun(number)
   end
 
   def successor(number)
-    BottleNumber.new(number).successor
+    BottleNumber.new(number).successor(number)
   end
 end
 
@@ -46,14 +42,6 @@ class BottleNumber
   attr_reader :number
   def initialize(number)
     @number = number
-  end
-
-  def container
-    if number == 1
-      "bottle"
-    else
-      "bottles"
-    end
   end
 
   def quantity
@@ -64,15 +52,23 @@ class BottleNumber
     end
   end
 
-  def action
-    if number == 0
-      "Go to the store and buy some more"
+  def container(number)
+    if number == 1
+      "bottle"
     else
-      "Take #{pronoun} down and pass it around"
+      "bottles"
     end
   end
 
-  def pronoun
+  def action(number)
+    if number == 0
+      "Go to the store and buy some more"
+    else
+      "Take #{pronoun(number)} down and pass it around"
+    end
+  end
+
+  def pronoun(number)
     if number == 1
       "it"
     else
@@ -80,7 +76,7 @@ class BottleNumber
     end
   end
 
-  def successor
+  def successor(number)
     if number == 0
       99
     else
