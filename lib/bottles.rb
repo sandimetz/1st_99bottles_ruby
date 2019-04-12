@@ -36,19 +36,19 @@ class Bottles
     end
   end
 
-  def pronoun(number)
-    if number == 1
-      "it"
-    else
-      "one"
-    end
-  end
-
   def container(number)
     if number == 1
       "bottle"
     else
       "bottles"
+    end
+  end
+
+  def pronoun(number)
+    if number == 1
+      "it"
+    else
+      "one"
     end
   end
 end
