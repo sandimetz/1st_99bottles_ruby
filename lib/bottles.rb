@@ -31,19 +31,19 @@ class BottleNumber
     @number = number
   end
 
-  def container
-    if number == 1
-      "bottle"
-    else
-      "bottles"
-    end
-  end
-
   def quantity
     if number == 0
       "no more"
     else
       number.to_s
+    end
+  end
+
+  def container
+    if number == 1
+      "bottle"
+    else
+      "bottles"
     end
   end
 
