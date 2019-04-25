@@ -40,12 +40,12 @@ class BottleNumber
     "#{quantity} #{container}"
   end
 
-  def container
-    "bottles"
-  end
-
   def quantity
     number.to_s
+  end
+
+  def container
+    "bottles"
   end
 
   def action
