@@ -1,7 +1,3 @@
-# ...
-  # ...
-    # ...
-      # ...
 class Bottles
 
   def song
@@ -41,16 +37,16 @@ class BottleNumber
     "#{quantity} #{container}"
   end
 
+  def quantity
+    number.to_s
+  end
+
   def container
     if number == 1
       "bottle"
     else
       "bottles"
     end
-  end
-
-  def quantity
-    number.to_s
   end
 
   def action
