@@ -51,6 +51,15 @@ end
 
 class CountdownSongTest < Minitest::Test
   def test_a_couple_verses
+    expected =
+      "This is verse 99.\n" +
+      "\n" +
+      "This is verse 98.\n"
+    assert_equal expected,
+      CountdownSong.new(verse_template: FakeVerse).verses(99, 98)
+  end
+
+  def test_a_couple_verses
     expected = "99 bottles of beer on the wall, " +
       "99 bottles of beer.\n" +
       "Take one down and pass it around, " +
