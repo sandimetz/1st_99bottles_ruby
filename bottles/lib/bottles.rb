@@ -32,6 +32,11 @@ class BottleVerse
     @bottle_number = number
   end
 
+  def initialize(number)
+    @number = number
+    @bottle_number = number
+  end
+
   def lyrics
     "#{bottle_number} of beer on the wall, ".capitalize +
     "#{bottle_number} of beer.\n" +
