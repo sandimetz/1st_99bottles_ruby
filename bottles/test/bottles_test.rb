@@ -50,6 +50,11 @@ class FakeVerse
 end
 
 class CountdownSongTest < Minitest::Test
+  def test_verse
+    assert_equal "This is verse 47.\n",
+      CountdownSong.new(verse_template: FakeVerse).verse(47)
+  end
+
   def test_a_couple_verses
     expected =
       "This is verse 99.\n" +
