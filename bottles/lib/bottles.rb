@@ -17,6 +17,13 @@ class Bottles
   end
 end
 
+class BottleVerse
+  attr_reader :number
+
+  def initialize(number)
+    @number = number
+  end
+end
 
 class BottleNumber
   def self.for(number)
