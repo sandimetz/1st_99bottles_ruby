@@ -45,7 +45,7 @@ end
 
 class FakeVerse
   def self.lyrics(number)
-    "This is verse #{number}."
+    "This is verse #{number}.\n"
   end
 end
 
