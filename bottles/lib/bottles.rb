@@ -9,6 +9,7 @@ class Bottles
 
   def verse(number)
     BottleVerse.new(number).verse(number)
+    # BottleVerse.new(number).lyrics
 
     bottle_number = BottleNumber.for(number)
 
