@@ -19,6 +19,10 @@ class Bottles
 end
 
 class BottleVerse
+  def self.lyrics(number)
+    self.new(number).lyrics
+  end
+
   attr_reader :number
 
   def initialize(number)
