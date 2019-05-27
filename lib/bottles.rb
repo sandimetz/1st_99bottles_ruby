@@ -9,7 +9,7 @@ class Bottles
   end
 
   def verse(number)
-    bottle_number      = BottleNumber.for(number)
+    bottle_number = BottleNumber.for(number)
 
     "#{bottle_number} of beer on the wall, ".capitalize +
     "#{bottle_number} of beer.\n" +
@@ -66,7 +66,7 @@ class BottleNumber
 end
 
 class BottleNumber0 < BottleNumber
-  register(self)
+  BottleNumber.register(self)
 
   def self.handles?(number)
     number == 0
@@ -86,7 +86,7 @@ class BottleNumber0 < BottleNumber
 end
 
 class BottleNumber1 < BottleNumber
-  register(self)
+  BottleNumber.register(self)
 
   def self.handles?(number)
     number == 1
@@ -102,7 +102,7 @@ class BottleNumber1 < BottleNumber
 end
 
 class BottleNumber6 < BottleNumber
-  register(self)
+  BottleNumber.register(self)
 
   def self.handles?(number)
     number == 6
