@@ -35,6 +35,10 @@ class BottleNumber
     registry.prepend(candidate)
   end
 
+  def self.inherited(candidate)
+    register(candidate)
+  end
+
   attr_reader :number
   def initialize(number)
     @number = number
@@ -66,8 +70,6 @@ class BottleNumber
 end
 
 class BottleNumber0 < BottleNumber
-  BottleNumber.register(self)
-
   def self.handles?(number)
     number == 0
   end
@@ -86,8 +88,6 @@ class BottleNumber0 < BottleNumber
 end
 
 class BottleNumber1 < BottleNumber
-  BottleNumber.register(self)
-
   def self.handles?(number)
     number == 1
   end
@@ -102,8 +102,6 @@ class BottleNumber1 < BottleNumber
 end
 
 class BottleNumber6 < BottleNumber
-  BottleNumber.register(self)
-
   def self.handles?(number)
     number == 6
   end
