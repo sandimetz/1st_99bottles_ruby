@@ -11,12 +11,12 @@ class Bottles
     BottleVerse.new(number).verse(number)
     # BottleVerse.new(number).lyrics
 
-    bottle_number = BottleNumber.for(number)
+    # bottle_number = BottleNumber.for(number)
 
-    "#{bottle_number} of beer on the wall, ".capitalize +
-    "#{bottle_number} of beer.\n" +
-    "#{bottle_number.action}, " +
-    "#{bottle_number.successor} of beer on the wall.\n"
+    # "#{bottle_number} of beer on the wall, ".capitalize +
+    # "#{bottle_number} of beer.\n" +
+    # "#{bottle_number.action}, " +
+    # "#{bottle_number.successor} of beer on the wall.\n"
   end
 end
 
