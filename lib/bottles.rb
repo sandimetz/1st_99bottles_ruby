@@ -28,12 +28,14 @@ class BottleNumber
   end
 
   def self.registry
-    @@registry ||= [BottleNumber]
+    @@registry ||= []
   end
 
   def self.register(candidate)
     registry.prepend(candidate)
   end
+
+  BottleNumber.register(self)
 
   attr_reader :number
   def initialize(number)
