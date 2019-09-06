@@ -18,6 +18,11 @@ class Bottles
 end
 
 class BottleVerse
+  attr_reader :number
+
+  def initialize(number)
+    @number = number
+  end
 end
 
 class BottleNumber
