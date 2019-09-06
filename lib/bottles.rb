@@ -17,6 +17,9 @@ class Bottles
   end
 end
 
+class BottleVerse
+end
+
 class BottleNumber
   def self.for(number)
     case number
