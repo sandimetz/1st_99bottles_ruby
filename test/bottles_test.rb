@@ -3,7 +3,7 @@ require 'minitest/autorun'
 require 'minitest/pride'
 require_relative '../lib/bottles'
 
-class BottlesTest < Minitest::Test
+class CountdownSongTest < Minitest::Test
   def test_a_couple_verses
     expected = <<~VERSES
       99 bottles of beer on the wall, 99 bottles of beer.
