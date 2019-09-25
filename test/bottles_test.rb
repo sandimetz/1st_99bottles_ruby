@@ -3,6 +3,12 @@ require 'minitest/autorun'
 require 'minitest/pride'
 require_relative '../lib/bottles'
 
+class FakeVerse
+  def self.lyrics(number)
+    # What goes here?
+  end
+end
+
 class CountdownSongTest < Minitest::Test
   def test_a_couple_verses
     expected = <<~VERSES
