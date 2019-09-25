@@ -5,7 +5,7 @@ require_relative '../lib/bottles'
 
 class FakeVerse
   def self.lyrics(number)
-    # What goes here?
+    "This is verse #{number}.\n"
   end
 end
 
