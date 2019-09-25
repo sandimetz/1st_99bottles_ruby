@@ -12,13 +12,11 @@ end
 class CountdownSongTest < Minitest::Test
   def test_a_couple_verses
     expected = <<~VERSES
-      99 bottles of beer on the wall, 99 bottles of beer.
-      Take one down and pass it around, 98 bottles of beer on the wall.
+      This is verse 99.
 
-      98 bottles of beer on the wall, 98 bottles of beer.
-      Take one down and pass it around, 97 bottles of beer on the wall.
+      This is verse 98.
     VERSES
-    assert_equal expected, CountdownSong.new.verses(99, 98)
+    assert_equal expected, CountdownSong.new(verse_template: FakeVerse).verses(99, 98)
   end
 
   def test_a_few_verses
