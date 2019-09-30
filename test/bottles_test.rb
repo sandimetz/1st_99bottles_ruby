@@ -41,7 +41,7 @@ class CountdownSongTest < Minitest::Test
     VERSES
     assert_equal(
       expected,
-      CountDownSong.new(
+      CountdownSong.new(
         verse_template: FakeVerse, max: 47, min: 43).song)
   end
 
