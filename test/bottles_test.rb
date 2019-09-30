@@ -11,9 +11,8 @@ end
 
 class CountdownSongTest < Minitest::Test
   def test_a_verse
-    expected = "This is verse 99.\n"
     assert_equal(
-      expected,
+      "This is verse 99.\n",
       CountdownSong.new(verse_template: FakeVerse).verse(99))
   end
 
