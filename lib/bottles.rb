@@ -1,18 +1,16 @@
-class CountdownSong
-  attr_reader :verse_template, :max, :min
+class Bottles
+  attr_reader :verse_template
 
-  def initialize(verse_template: BottleVerse, max: 99, min: 0)
+  def initialize(verse_template: BottleVerse)
     @verse_template = verse_template
-    @max = max
-    @min = min
   end
 
   def song
-    verses(max, min)
+    verses(99, 0)
   end
 
-  def verses(max, min)
-    max.downto(min).collect {|i| verse(i)}.join("\n")
+  def verses(upper, lower)
+    upper.downto(lower).map { |i| verse(i) }.join("\n")
   end
 
   def verse(number)
@@ -22,19 +20,16 @@ end
 
 class BottleVerse
   def self.lyrics(number)
-    # new(BottleNumber.for(number)).lyrics
-    new(number).lyrics
+    new(BottleNumber.for(number)).lyrics
   end
 
-  attr_reader :number
+  attr_reader :bottle_number
 
-  def initialize(number)
-    @number = number
+  def initialize(bottle_number)
+    @bottle_number = bottle_number
   end
 
   def lyrics
-    bottle_number = BottleNumber.for(number)
-
     "#{bottle_number} of beer on the wall, ".capitalize +
     "#{bottle_number} of beer.\n" +
     "#{bottle_number.action}, " +
@@ -57,6 +52,7 @@ class BottleNumber
   end
 
   attr_reader :number
+
   def initialize(number)
     @number = number
   end
@@ -111,11 +107,11 @@ class BottleNumber1 < BottleNumber
 end
 
 class BottleNumber6 < BottleNumber
-  def container
-    "six-pack"
-  end
-
   def quantity
     "1"
+  end
+
+  def container
+    "six-pack"
   end
 end
