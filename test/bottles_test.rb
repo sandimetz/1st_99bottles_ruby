@@ -3,6 +3,9 @@ require 'minitest/autorun'
 require 'minitest/pride'
 require_relative '../lib/bottles'
 
+class BottleVerseTest < Minitest::Test
+end
+
 class BottlesTest < Minitest::Test
   def test_the_first_verse
     expected = "99 bottles of beer on the wall, " +
