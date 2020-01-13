@@ -43,7 +43,6 @@ class BottleVerseTest < Minitest::Test
       "99 bottles of beer on the wall.\n"
     assert_equal expected, Bottles.new.verse(0)
   end
-
 end
 
 class BottlesTest < Minitest::Test
