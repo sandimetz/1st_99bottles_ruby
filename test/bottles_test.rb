@@ -12,7 +12,7 @@ class BottleVerseTest < Minitest::Test
     assert_equal expected, BottleVerse.lyrics(99)
   end
 
-  def test_another_verse
+  def test_verse_general_rule_lower_bound
     expected = "3 bottles of beer on the wall, " +
       "3 bottles of beer.\n" +
       "Take one down and pass it around, " +
