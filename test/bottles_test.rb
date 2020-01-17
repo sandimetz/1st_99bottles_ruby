@@ -20,6 +20,14 @@ class BottleVerseTest < Minitest::Test
     assert_equal expected, BottleVerse.lyrics(3)
   end
 
+  def test_verse_7
+    expected = "7 bottles of beer on the wall, " +
+      "7 bottles of beer.\n" +
+      "Take one down and pass it around, " +
+      "1 six-pack of beer on the wall.\n"
+    assert_equal expected, BottleVerse.lyrics(7)
+  end
+
   def test_verse_2
     expected = "2 bottles of beer on the wall, " +
       "2 bottles of beer.\n" +
