@@ -72,7 +72,7 @@ class CountdownSongTest < Minitest::Test
       "98 bottles of beer.\n" +
       "Take one down and pass it around, " +
       "97 bottles of beer on the wall.\n"
-    assert_equal expected, Bottles.new.verses(99, 98)
+    assert_equal expected, CountdownSong.new.verses(99, 98)
   end
 
   def test_a_few_verses
@@ -90,7 +90,7 @@ class CountdownSongTest < Minitest::Test
       "no more bottles of beer.\n" +
       "Go to the store and buy some more, " +
       "99 bottles of beer on the wall.\n"
-    assert_equal expected, Bottles.new.verses(2, 0)
+    assert_equal expected, CountdownSong.new.verses(2, 0)
   end
 
   def test_the_whole_song
@@ -395,6 +395,6 @@ class CountdownSongTest < Minitest::Test
       No more bottles of beer on the wall, no more bottles of beer.
       Go to the store and buy some more, 99 bottles of beer on the wall.
     SONG
-    assert_equal expected, Bottles.new.song
+    assert_equal expected, CountdownSong.new.song
   end
 end
