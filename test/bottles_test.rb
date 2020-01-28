@@ -1,4 +1,4 @@
-gem 'minitest', '~> 5.13'
+gem 'minitest', '~> 5.14'
 require 'minitest/autorun'
 require 'minitest/pride'
 require_relative '../lib/bottles'
