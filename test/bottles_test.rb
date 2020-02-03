@@ -61,6 +61,12 @@ class BottleVerseTest < Minitest::Test
   end
 end
 
+class VerseFake
+  def self.lyrics(number)
+    "This is verse number #{number}.\n"
+  end
+end
+
 class CountdownSongTest < Minitest::Test
   def test_a_couple_verses
     expected = "99 bottles of beer on the wall, " +
