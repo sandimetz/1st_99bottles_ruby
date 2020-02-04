@@ -69,6 +69,9 @@ end
 
 class CountdownSongTest < Minitest::Test
   def test_a_couple_verses
+  end
+
+  def test_a_couple_verses
     expected = "99 bottles of beer on the wall, " +
       "99 bottles of beer.\n" +
       "Take one down and pass it around, " +
