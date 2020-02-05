@@ -3,6 +3,7 @@ class CountdownSong
 
   def initialize(verse_template: BottleVerse, max: 99, min: 0)
     @verse_template = verse_template
+    @max, @min = max, min
   end
 
   def song
