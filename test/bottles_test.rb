@@ -67,6 +67,20 @@ class VerseFake
   end
 end
 
+module VerseRolePlayerTest
+  def test_plays_verse_role
+    assert @role_player.respond_to?(:lyrics)
+  end
+end
+
+class VerseFakeTest < Minitest::Test
+  include VerseRolePlayerTest
+
+  def setup
+    @role_player = VerseFake
+  end
+end
+
 class CountdownSongTest < Minitest::Test
   def test_verse
     assert_equal "This is verse 500.\n", CountdownSong
