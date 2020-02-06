@@ -3,6 +3,12 @@ require 'minitest/autorun'
 require 'minitest/pride'
 require_relative '../lib/bottles'
 
+module VerseRolePlayerTest
+  def test_plays_verse_role
+    assert @role_player.respond_to?(:lyrics)
+  end
+end
+
 class BottleVerseTest < Minitest::Test
   def test_verse_general_rule_upper_bound
     expected = "99 bottles of beer on the wall, " +
@@ -64,12 +70,6 @@ end
 class VerseFake
   def self.lyrics(number)
     "This is verse #{number}.\n"
-  end
-end
-
-module VerseRolePlayerTest
-  def test_plays_verse_role
-    assert @role_player.respond_to?(:lyrics)
   end
 end
 
